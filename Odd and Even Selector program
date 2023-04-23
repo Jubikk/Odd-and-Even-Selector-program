@@ -16,4 +16,18 @@ even_file = open('even.txt', 'w')
 for n in even_numbers:
     even_file.write(str(n) + "\n")
 even_file.close()
-    
+
+odd_file = open('odd.txt', 'w')
+for n in odd_numbers:
+    odd_file.write(str(n) + "\n")
+odd_file.close()
+
+even_file = open('even.txt', 'r')
+print("Even numbers:")
+print(even_file.read())
+even_file.close()
+
+odd_file = open('odd.txt', 'r')
+print("Odd numbers:")
+print(odd_file.read())
+odd_file.close()
