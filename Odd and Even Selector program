@@ -3,3 +3,17 @@
 file = open('numbers.txt', 'r')
 numbers = file.read().split()
 file.close()
+
+even_numbers = []
+odd_numbers = []
+for n in numbers:
+    if int(n) % 2 == 0:
+        even_numbers.append(n)
+    else:
+        odd_numbers.append(n)
+
+even_file = open('even.txt', 'w')
+for n in even_numbers:
+    even_file.write(str(n) + "\n")
+even_file.close()
+    
